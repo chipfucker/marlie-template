@@ -4,7 +4,8 @@ import * as com from "#lib/error.js";
 export const name = Discord.Events.MessageCreate;
 export async function execute(m) {
     try {
-        const match = m.content.match(/^\$(\S+)\s*(.*)/);
+        const prefix = "$";
+        const match = m.content.match(new RegExp("^\\" + prefix + "(\\S+)\\s*(.*)"));
         if (!match) return;
         
         const emoji = "\ud83d\udd52"; // :clock3:

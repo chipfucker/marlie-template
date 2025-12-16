@@ -1,2 +1,2 @@
-Bot I made for my own fun.
-https://github.com/chipfucker/marlie
+This is the description of the bot.
+If you're seeing this on the bot's profile, change it at `/res/profile/`
